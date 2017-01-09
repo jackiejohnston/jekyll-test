@@ -33,7 +33,16 @@ env: 'production'
 
 stitch:
   dependencies: 
+    - 'js/jquery.min.js'
+    - 'js/bootstrap.min.js'
+    - 'js/jasny-bootstrap.min.js'
+    - 'js/insQ.min.js'
+    - 'js/chat-insertion.js'
     - 'js/animOnScroll.js'
+    - 'js/header-parallax.js'
+    - 'js/rates.vendor.js'
+    - 'js/rates.js'
+    - 'js/ratesFetcher.js'
     - 'js/site.js'
   output: 'js/application.min.js'
   fingerprint: false

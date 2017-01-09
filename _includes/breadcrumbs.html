@@ -1,0 +1,22 @@
+<div class= "header-nav-bar breadcrumb-container col-xs-12 hidden-xs">
+  <div class ="container">
+    <div class="breadcrumb">
+      {% if page.slug == "404" %}
+        <a class="breadcrumb-item" href="/">
+          Home
+        </a>
+        <span class="breadcrumb-item active">Page Not Found</span>
+      {% else %}
+        <a class="breadcrumb-item" href="/">
+          Home
+        </a>
+        {% for crumb in page.breadcrumbs %}
+          <a class="breadcrumb-item" href="{{ crumb[1] }}">
+            {{ crumb[0] }}
+          </a>
+        {% endfor %}
+        <span class="breadcrumb-item active">{{ page.title }}</span>
+      {% endif %}
+    </div>
+  </div>
+</div>
