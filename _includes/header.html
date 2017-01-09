@@ -1,3 +1,7 @@
+<!-- BEGIN LivePerson Monitor. -->
+  <script type="text/javascript"> window.lpTag=window.lpTag||{};if(typeof window.lpTag._tagCount==='undefined'){window.lpTag={site:'79787553'||'',section:lpTag.section||'',autoStart:lpTag.autoStart===false?false:true,ovr:lpTag.ovr||{},_v:'1.5.1',_tagCount:1,protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn);},0);},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json);},1);}},defer:function(fn,fnType){if(fnType==0){this._defB=this._defB||[];this._defB.push(fn);}else if(fnType==1){this._defT=this._defT||[];this._defT.push(fn);}else{this._defL=this._defL||[];this._defL.push(fn);}},load:function(src,chr,id){var t=this;setTimeout(function(){t._load(src,chr,id);},0);},_load:function(src,chr,id){var url=src;if(!src){url=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site;}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id);}s.setAttribute('src',url);document.getElementsByTagName('head').item(0).appendChild(s);},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady');});}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady');},false);window.addEventListener('load',function(){that._domReady('domReady');},false);}if(typeof(window._lptStop)=='undefined'){this.load();}},start:function(){this.autoStart=true;},_domReady:function(n){if(!this.isDom){this.isDom=true;this.events.trigger('LPT','DOM_READY',{t:n});}this._timing[n]=(new Date()).getTime();},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],ev:lpTag.ev||[]};lpTag.init();}else{window.lpTag._tagCount+=1;} </script>
+<!-- END LivePerson Monitor. -->
+
 <header id="header-pennymac-usa">
   <nav class="container-fluid navbar-fixed-top">
     
@@ -5,122 +9,55 @@
       <div class="container">
                 
         <div class="col-xs-6 col-sm-3">
-        <button type="button" class="visible-xs-inline-block hidden-sm hidden-md hidden-lg pull-left mobile-menu-icon" data-toggle="offcanvas" data-target="#mobileMenu">
+        <button type= "button" class="visible-xs-inline-block hidden-sm hidden-md hidden-lg pull-left mobile-menu-icon" data-toggle="offcanvas" data-target="#mobileMenu">
             <i class="fa fa-bars fa-lg">&nbsp;</i>
         </button>    
-          <a href="https://www.pennymacusa.com/" class="navbar-brand">
-            <img src="https://pennypixels.pennymacusa.com/img/logo.svg" alt="PennyMac Loan Services">
+          <a href="/" class="navbar-brand">
+            <img  src="https://pennypixels.pennymacusa.com/img/logo.svg" alt="PennyMac Loan Services"/>
           </a>
         </div>
         
         <div class="col-sm-5 col-md-6 text-center hidden-xs visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
           <div class="nav-search">
-            <form id="search-form" action="/search" role="search">
+            <form id="search-form" action='/search'  role="search">
               <div class="input-group">
                 <div class="input-group-addon">
                   <i class="fa fa-search"></i>
                 </div>
-                <input name="q" type="text" class="form-control" placeholder="Type something to search">
+                <input name='q' type="text" class="form-control" placeholder="Type something to search">
               </div>
             </form>
           </div>
         </div>
         
         <div class="col-xs-6 col-sm-4 col-md-3 text-right nav-login">
-          
-            <a href="https://customers.pennymacusa.com/Account/Login" target="_blank"><button class="btn btn-success">Log In</button></a>
-          
-          <a href="https://customers.pennymacusa.com/Account/Register" class="adobe-analytics-servicing" target="_blank"><button class="btn btn-primary">Register</button></a>
+          <a href="{{ login_url }}"  target="_blank"><button class="btn btn-success">Log In</button></a>
+          <a href="{{ registration_url }}" class="adobe-analytics-servicing" target="_blank"><button class="btn btn-primary">Register</button></a>
         </div>
         
       </div>
     </div><!-- /.navbar-gray -->
 
-    <div class="pnmac-header-nav-bar col-xs-10 offcanvas-sm navmenu navmenu-default navmenu-fixed-left" id="mobileMenu">
+    <div class="header-nav-bar pnmac-header-nav-bar col-xs-10 offcanvas-sm navmenu navmenu-default navmenu-fixed-left" id ="mobileMenu">
       <div class="container">
         <ul class="nav navbar-nav">
           <li class="visible-xs hidden-sm hidden-md hidden-lg">
             <div class="nav-search">
-              <form id="search-form" action="/search" role="search">
+              <form id="search-form" action='/search'  role="search">
                 <div class="input-group">
                   <div class="input-group-addon">
                     <i class="fa fa-search"></i>
                   </div>
-                  <input name="q" type="text" class="form-control" placeholder="Type something to search">
+                  <input name='q' type="text" class="form-control" placeholder="Type something to search">
                 </div>
               </form>
             </div>
           </li>
-          <li class="dropdown">
-  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Purchasing <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="https://www.pennymacusa.com/purchasing">Purchasing Overview</a></li>
-    <li><a href="https://www.pennymacusa.com/purchasing/purchasing-products">Home Purchase Loans</a></li>
-    <li><a href="https://www.pennymacusa.com/multifamily-loans">Multifamily Loans (5+ Units)</a></li>
-    <li><a href="https://www.pennymacusa.com/purchasing/purchasing-loan-calculators">Loan Calculators</a></li>
-    <li><a href="https://www.pennymacusa.com/rates">Rates</a></li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Refinancing <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="https://www.pennymacusa.com/refinancing">Refinancing Overview</a></li>
-    <li><a href="https://www.pennymacusa.com/refinancing/refinancing-products">Refinancing Loans</a></li>
-    <li><a href="https://www.pennymacusa.com/multifamily-loans">Multifamily Loans (5+ Units)</a></li>
-    <li><a href="https://www.pennymacusa.com/refinancing/how-refinancing-works">How Refinancing Works</a></li>
-    <li><a href="https://www.pennymacusa.com/refinancing/refinancing-calculators">Refinancing Calculators</a></li>
-    <li><a href="https://www.pennymacusa.com/relief-and-assistance">Mortgage Relief</a></li>
-    <li><a href="https://www.pennymacusa.com/rates">Rates</a></li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Relief &amp; Assistance <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="https://www.pennymacusa.com/relief-and-assistance">Relief &amp; Assistance Overview</a></li>
-    <li><a href="https://www.pennymacusa.com/relief-and-assistance/options-to-stay-in-your-home">Options to Stay in Your Home</a></li>
-    <li><a href="https://www.pennymacusa.com/relief-and-assistance/foreclosure-alternatives">Foreclosure Alternatives</a></li>
-    <li><a href="https://www.pennymacusa.com/property-damage-disaster-assistance">Property Damage &amp; Disaster Assistance</a></li>
-  </ul>
-</li>
-<li><a href="https://www.pennymacusa.com/rates">Rates</a></li>
-<li class="dropdown">
-  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="https://www.pennymacusa.com/my-account">My Account Overview</a></li>
-    <li><a href="https://www.pennymacusa.com/my-account/accessing-your-account-information">Access Account</a></li>
-    <li><a href="https://customers.pennymacusa.com/Account/Login" target="_blank">Log In/Register</a></li>
-    <li><a href="https://www.pennymacusa.com/my-account/new-borrower-information">New Customer</a></li>
-    <li><a href="https://www.pennymacusa.com/my-account/making-payments">Making Payments</a></li>
-    <li><a href="https://www.pennymacusa.com/my-account/tax-and-insurance">Tax &amp; Insurance</a></li>
-    <li><a href="https://www.pennymacusa.com/relief-and-assistance">Mortgage Relief</a></li>
-  </ul>
-</li>    
-<li class="dropdown">
-  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="https://www.pennymacusa.com/about-us">About PennyMac</a></li>
-    <li><a href="https://www.pennymacusa.com/pennymac-reviews">Reviews &amp; Testimonials</a></li>
-    <li><a href="https://www.pennymacusa.com/careers">Careers</a></li>
-    <li><a href="https://www.pennymacusa.com/affinity">Affinity Programs</a></li>
-    <li><a href="https://www.pennymacusa.com/reo-properties">REO Properties</a></li>
-    <li><a href="http://ir.pennymacfinancial.com/CorporateProfile" target="_blank">Investor Relations</a></li>
-  </ul>
-</li>
-<li><a href="https://www.pennymacusa.com/contact-us">Contact Us</a></li>
-<li><a href="https://www.pennymacusa.com/blog">Learning Center</a></li>
-          <li><a rel="nofollow" href="tel:1-866-549-3583">(866) 549-3583</a></li>
+          {% include menu-items.html %}
+          <li><a class="tel" rel="nofollow" href="tel:1-866-549-3583">(866) 549-3583</a></li>
         </ul>
       </div>
     </div>
-    
-    <div class="breadcrumb-container col-xs-12 hidden-xs">
-      <div class="container">
-        <div class="breadcrumb">
-          <a class="breadcrumb-item" href="https://www.pennymacusa.com">Home</a>
-          <span class="breadcrumb-item active">Refinancing</span>
-        </div>
-      </div>
-    </div>
-    
+    {% include breadcrumbs.html %}
   </nav>
 </header>

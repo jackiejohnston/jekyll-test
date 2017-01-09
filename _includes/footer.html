@@ -1,6 +1,6 @@
 <footer id="footer-pennymac-usa" class="container-fluid">
   <div class="row bkg-blue cta-dk-bkg-lg text-center">
-    Call <a href="tel:1-866-549-3583" rel="nofollow">(866) 549-3583</a> <br class="visible-xs-inline hidden-sm hidden-md hidden-lg">for Today’s Rates
+    Call <a href="tel:1-866-549-3583" rel= "nofollow">(866) 549-3583</a> <br class="visible-xs-inline hidden-sm hidden-md hidden-lg">for Today&rsquo;s Rates
   </div>
   <div class="row bkg-gray-wh95">
     <div class="text-footer">
@@ -8,22 +8,22 @@
         <div class="footer-links footer-links-left">
           <h5 class="text-lt-bkg">Company Info</h5>
           <ul class="list-unstyled">
-            <li><a href="https://www.pennymacusa.com/about-us">About Us</a></li>
-            <li><a href="https://www.pennymacusa.com/contact-us">Contact Us</a></li>
-            <li><a href="https://customers.pennymacusa.com/Account/Login" rel="nofollow">Login</a></li>
-            <li><a href="https://customers.pennymacusa.com/Account/Register" rel="nofollow">Registration</a></li>
-            <li><a href="https://www.pennymacusa.com/careers">Careers</a></li>
-            <li><a href="https://www.pennymacusa.com/blog">Blog</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="{{ login_url }}" rel= "nofollow">Login</a></li>
+            <li><a href="{{ registration_url}}" rel= "nofollow">Registration</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/blog">Blog</a></li>
           </ul>
         </div>
         <div class="footer-links footer-links-center">
           <h5 class="text-lt-bkg">Mortgage Products</h5>
           <ul class="list-unstyled">
-            <li><a href="https://www.pennymacusa.com/purchasing">Purchasing</a></li>
-            <li><a href="https://www.pennymacusa.com/refinancing">Refinancing</a></li>
-            <li><a href="https://www.pennymacusa.com/relief-and-assistance">Relief &amp; Assistance</a></li>
+            <li><a href="/purchasing">Purchasing</a></li>
+            <li><a href="/refinancing">Refinancing</a></li>
+            <li><a href="/relief-and-assistance">Relief & Assistance</a></li>
             <li><a href="https://www.pennymaccref.com/" target="_blank">Commercial</a></li>
-            <li><a href="https://www.pennymacusa.com/rates">Rates</a></li>
+            <li><a href="/rates">Rates</a></li>
           </ul>
         </div>
         <div class="footer-links">
@@ -45,27 +45,29 @@
   <div class="row footer-row footer-disclosure-wrapper">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
-          <img class="ehl-logo" src="https://west-production-pennymacusa.s3.amazonaws.com/sites/548a9f11e8439bd07e000002/theme/images/equal-housing-lender.png" alt="Equal Housing Lender Logo">
+        <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12 m-t-3">
+          <img class="ehl-logo" src="/images/equal-housing-lender-black.svg" alt="Equal Housing Lender Logo">
           <p>
-            Equal Housing Opportunity © 2008-2016 PennyMac Loan Services, LLC, 3043 Townsgate Rd, Suite 200, Westlake Village, CA 91361, 818- 224-7442. NMLS ID # 35953 (<a href="http://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/35953" target="_blank" rel="nofollow" class="adobe-analytics-external-link">NMLS Consumer Access</a>). Trade/service marks are the property of PennyMac Loan Services, LLC and/or its subsidiaries or affiliates.
-            
+            Equal Housing Opportunity © 2008-{{ now | localized_date: '%Y' }} PennyMac Loan Services, LLC, 3043 Townsgate Rd, Suite 200, Westlake Village, CA 91361, 818-224-7442. NMLS ID # 35953 (<a href="http://www.nmlsconsumeraccess.com/EntityDetails.aspx/COMPANY/35953" target="_blank" rel="nofollow" class="adobe-analytics-external-link">NMLS Consumer Access</a>). Trade/service marks are the property of PennyMac Loan Services, LLC and/or its subsidiaries or affiliates.
+            {% if company %}
+              {{ company.legal_footer }}
+              <div class="pull-right">
+                <small class=\"text-muted pull-right\"> {{ company.marketing_code }}</small>
+              </div>
+            {% endif %}
           </p>
         </div>
-        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 ">
+        <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
           <div class="footer-accreditions-certifications">
             <span class="overview-subsection-certifications-img-wrapper">
-              <a href="http://www.zillow.com/profile/PennyMacLoanServices/Reviews/?scrnnm=PennyMacLoanServices" target="_blank" rel="nofollow" class="adobe-analytics-external-link"><img src="https://www.zillowstatic.com/static/images/badges/5star-lender-v.png" alt="PennyMac Loan Services Reviews"></a>
+            <a href="https://www.zillow.com/profile/PennyMacLoanServices/Reviews/?scrnnm=PennyMacLoanServices" target="_blank" rel="nofollow" class="adobe-analytics-external-link">
+             <img src="/images/zillow-5-star_grey.svg" alt="PennyMac Loan Services Reviews"  width="118" height= "74">
+            </a>
             </span>
             <span class="overview-subsection-certifications-img-wrapper">
-              <a href="http://www.bbb.org/santa-barbara/business-reviews/mortgage-lender/pennymac-loan-services-llc-in-moorpark-ca-92011078/#bbbonlineclick" target="_blank" title="PennyMac Loan Services BBB Reviews" rel="nofollow" class="adobe-analytics-external-link">
-                <img src="https://seal-santabarbara.bbb.org/seals/blue-seal-280-80-pennymac-loan-services-llc-92011078.png" alt="PennyMac Loan Services BBB Reviews" class="img-responsive ">
-              </a>
-            </span>
-            <span class="overview-subsection-certifications-img-wrapper">
-              <a href="https://www.lendingtree.com/loan-companies/pennymac-loan-services-llc-reviews-19790" target="_blank" title="PennyMac Loan Services Lending Tree Reviews" rel="nofollow" class="adobe-analytics-external-link">
-                <img src="https://west-production-pennymacusa.s3.amazonaws.com/sites/548a9f11e8439bd07e000002/theme/images/lendingNetworkMember.png" alt="PennyMac Loan Services Lending Tree Reviews" class="img-responsive lending-tree-img">
-              </a>
+             <a href="https://www.bbb.org/santa-barbara/business-reviews/mortgage-lender/pennymac-loan-services-llc-in-moorpark-ca-92011078/#bbbonlineclick" target="_blank" title="PennyMac Loan Services BBB Reviews" rel="nofollow" class="adobe-analytics-external-link">
+              <img src="/images/bbb-grey.svg" alt="PennyMac Loan Services BBB Reviews" width="90" height="128">
+             </a>
             </span>
           </div>
         </div>
@@ -75,7 +77,7 @@
           <a data-toggle="collapse" id="more-less" href="#stateDisclosures" aria-expanded="false" aria-controls="stateDisclosures">State disclosures &nbsp;<i class="fa fa-plus" aria-hidden="true"></i></a>
         </p>
         <p class="collapse" id="stateDisclosures">
-          Arizona Mortgage Banker License # 0911088. Licensed by the Department of Business Oversight under the California Residential Mortgage Lending Act. Colorado: Regulated by the Division of Real Estate. Colorado office: 700 17th St, Suite 200, Denver, CO 80202, (866) 436-4766. Georgia Residential Mortgage Licensee #33027. Illinois Residential Mortgage Licensee # MB.6760595. Massachusetts Mortgage Lender License # ML35953. Minnesota: This is not an offer to enter into an agreement and an offer may only be made pursuant to Minn. Stat. §47.206 (3) &amp; (4). Licensed by the New Hampshire Banking Department. Licensed by the N.J. Department of Banking and Insurance. North Carolina Permit No. 104753, 112228. Rhode Island Lender License # 20092600LL. Washington Consumer Loan License # CL-35953. For a complete listing of state licenses and important notices, please <a href="https://www.pennymacusa.com/state-licenses">click here</a>. Loans not available in New York. Some products may not be available in all states. Information, rates and pricing are subject to change without prior notice at the sole discretion of PennyMac Loan Services, LLC. All loan programs subject to borrowers meeting appropriate underwriting conditions. This is not a commitment to lend. Other restrictions apply. All rights reserved.
+          Arizona Mortgage Banker License # 0911088. Licensed by the Department of Business Oversight under the California Residential Mortgage Lending Act. Colorado: Regulated by the Division of Real Estate. Colorado office: 700 17th St, Suite 200, Denver, CO 80202, (866) 436-4766. Georgia Residential Mortgage Licensee #33027. Illinois Residential Mortgage Licensee # MB.6760595. Massachusetts Mortgage Lender License # ML35953. Minnesota: This is not an offer to enter into an agreement and an offer may only be made pursuant to Minn. Stat. §47.206 (3) &amp; (4). Licensed by the N.J. Department of Banking and Insurance. North Carolina Permit No. 104753, 112228. Rhode Island Lender License # 20092600LL. Washington Consumer Loan License # CL-35953. For more information, review <a href="/state-licenses">PennyMac&#39;s state licenses and important notices</a>. Loans not available in New York. Some products may not be available in all states. Information, rates and pricing are subject to change without prior notice at the sole discretion of PennyMac Loan Services, LLC. All loan programs subject to borrowers meeting appropriate underwriting conditions. This is not a commitment to lend. Other restrictions apply. All rights reserved.
         </p>
       </div>
     </div>
@@ -84,12 +86,26 @@
     <div class="container">
       <div class="col-xs-12 text-right">
         <ul class="list-inline">
-          <li><a href="https://www.pennymacusa.com/forms">Forms</a></li>
-          <li><a href="https://www.pennymacusa.com/legal">Legal</a></li>
-          <li><a href="https://www.pennymacusa.com/privacy">Privacy</a></li>
+          <li><a href="/forms">Forms</a></li>
+          <li><a href="/legal">Legal</a></li>
+          <li><a href="/privacy">Privacy</a></li>
         </ul>
       </div>
     </div>
   </div>
-  
+  {% if page.slug == 'home-value-estimator' %}
+    <div class="row footer-row footer-zillow-copywrite">
+      <div class="container">
+        <div class="col-xs-12">
+          <p>
+            © 2006-{{ now | localized_date: '%Y' }} Zillow, Inc. Use is subject to <a href="http://www.zillow.com/corp/Terms.htm" target="_blank" rel="nofollow">Terms of Use
+            <br>
+            <a href="http://www.zillow.com/zestimate" target="_blank" rel="nofollow">
+              What&rsquo;s a Zestimate&reg;?
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 </footer>
