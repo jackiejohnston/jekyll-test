@@ -1,7 +1,7 @@
 # PennyMac Jekyll
 This is a demo site built with [Jekyll](https://jekyllrb.com/).
 
-You can view it on GitHub Pages at: [https://jackiejohnston.github.io/test-jekyll/](https://jackiejohnston.github.io/test-jekyll/)
+You can view it on GitHub Pages at: [https://jackiejohnston.github.io/jekyll-test/](https://jackiejohnston.github.io/jekyll-test/)
 
 ## Requirements
 
@@ -13,8 +13,8 @@ You can view it on GitHub Pages at: [https://jackiejohnston.github.io/test-jekyl
 
 Run the following commands in your console:
 ```
-$  git clone git@github.com:pennymac/test-jekyll.git
-$  cd test-jekyll
+$  git clone git@github.com:pennymac/jekyll-test.git
+$  cd jekyll-test
 $  bundle install
 ```
 
