@@ -24,6 +24,7 @@ markdown: kramdown
 
 gems:
   - jekyll-autoprefixer
+  - jekyll-sitemap
 
 sass:
   style: compressed

@@ -26,4 +26,5 @@ group :jekyll_plugins do
    gem 'hawkins'
    gem 'jekyll-autoprefixer'
    gem 'jekyll-admin'
+   gem 'jekyll-sitemap'
 end
